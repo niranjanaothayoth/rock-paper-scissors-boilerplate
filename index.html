@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="starting-page" style="background: url('assets/bg.png') no-repeat center center fixed; background-size: cover;">
+    <div class="container">
+        <h1 style="color: azure; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">ROCK PAPER SCISSORS</h1>
+        <img id="start-game" src="assets/play-button.png" alt="Start Game" style="align-items: center;" >
+        <style>
+            body, html {
+                height: 100%;
+                margin: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            #start-game {
+                display: block;
+            }
+        </style>
+    </div>
+    <script>
+        document.getElementById('start-game').addEventListener('click', function() {
+            window.location.href = 'game.html';
+        });
+    </script>
+</body>
+</html>

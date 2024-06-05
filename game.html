@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background: url('assets/bg.png') no-repeat center center fixed; background-size: cover;">
+    <div class="container">
+        <h1 style="color: azure; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">ROCK PAPER SCISSORS</h1>
+        <div class="game-area">
+            <div class="box" id="user-box">
+                <h2 style="color: azure; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">USER</h2>
+                <div class="user-choices" style="align-items: flex-start;">
+                    <img src="assets/rock-logo.png" class="choice" id="rock" alt="Rock">
+                    <img src="assets/paper-logo.png" class="choice" id="paper" alt="Paper">
+                    <img src="assets/scissors-logo.png" class="choice" id="scissors" alt="Scissors">
+                </div>
+                <img id="user-choice" src="assets/game-image.png" alt="User choice">
+            </div>
+            <img id="vs" src="assets/vs.png" alt="Versus">
+            <div class="box" id="computer-box" style="align-items: flex-end;">
+                <h2 style="color: azure; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">COMPUTER</h2>
+                <img id="computer-choice" src="assets/game-image.png" alt="Computer choice">
+            </div>
+        </div>
+        <div class="result" style="color: azure; font-size: x-large;">
+            <p id="result-text"></p>
+            <button id="play-again">Play Again</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

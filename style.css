@@ -1,0 +1,104 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.game-background {
+    background: url('assets/bg.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.starting-page, .game-page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Optional: Adds a slight background to make text more readable */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    color: white;  /* Changed to white */
+    margin-bottom: 20px;
+}
+
+#start-game {
+    cursor: pointer;
+}
+
+.game-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.box {
+    width: 150px;
+    height: 200px;
+    border: 2px solid #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #ffc434;
+    margin: 0 20px;
+    position: relative;
+    padding: 10px;
+}
+
+.user-choices {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#user-choice, #computer-choice {
+    width: 100px;
+    height: 100px;
+}
+
+#vs {
+    width: 50px;
+    margin: 0 20px;  /* Add some margin to separate the VS image */
+}
+
+.choice {
+    width: 50px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.choice:hover {
+    transform: scale(1.1);
+}
+
+.result {
+    margin-top: 20px;
+}
+
+#result-text {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+button {
+    font-size: 1.5em;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(90, 37, 192);
+    color: white;
+}
